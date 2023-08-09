@@ -17,7 +17,7 @@ print("La resta de a - b es: ", resta)
 print("La multiplicacion de a * b es: ", multiplicacion)  
 print("La division de a / b es: ", division) 
 print("La potencia de a ** b es: ", potencia) 
-print("El modulo de a % b es: ", modulo)   
+print("El modulo de a % b es: ", modulo)  
  
 os.system('pause') 
 os.system('cls')
