@@ -10,7 +10,7 @@ while True:
     if numero == 0:
         break
     else:
-        numeros.append(numero)
+        numeros.append(numero)  #.append() agrega un elemento al final de la lista
 print("Los numeros ingresados son: ", numeros)
 print("Ingrese la operacion que desea realizar")
 print("+ para sumar")
