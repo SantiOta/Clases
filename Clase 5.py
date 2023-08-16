@@ -19,6 +19,7 @@ numero2 = int(input("Ingrese el segundo numero: "))
 if numero2 == 0:
     print("Error, el divisor no puede ser 0")
     numero2 = int(input("Ingrese el segundo numero: "))
+    print("La division es: ", numero1 / numero2)
 else:
     print("La division es: ", numero1 / numero2)
 
