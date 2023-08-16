@@ -41,8 +41,9 @@ os.system('cls')
 ingresos = [0, 0, 0, 0, 0]
 for i in range(0, 5):
     ingresos[i] = int(input("Ingrese su edad: "))
-    if ingresos[i] < 19:
+    if ingresos[i] < 18:
         print("No puede ingresar")
+
     else:
         print("Bienvenido")
         
