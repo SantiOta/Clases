@@ -1,20 +1,45 @@
 import os
 os.system('cls')
 
-edad = int(input("Ingrese su edad: "))
-if edad >= 18:
-    print("Usted es mayor de edad")
+print("Bienvenido a la calculadora")
+print("Ingrese los numeros que desea operar")
+print("Ingrese 0 para terminar de ingresar numeros")
+numeros = []
+while True:
+    numero = int(input("Ingrese un numero: "))
+    if numero == 0:
+        break
+    else:
+        numeros.append(numero)  #.append() agrega un elemento al final de la lista
+print("Los numeros ingresados son: ", numeros)
+print("Ingrese la operacion que desea realizar")
+print("+ para sumar")
+print("- para restar")
+print("* para multiplicar")
+print("/ para dividir")
+operacion = input("Ingrese la operacion: ")
+if operacion == "+":
+    resultado = 0
+    for numero in numeros:
+        resultado += numero
+    print("El resultado de la suma es: ", resultado)
+elif operacion == "-":
+    resultado = 0
+    for numero in numeros:
+        resultado -= numero
+    print("El resultado de la resta es: ", resultado)
+elif operacion == "*":
+    resultado = 1
+    for numero in numeros:
+        resultado *= numero
+    print("El resultado de la multiplicacion es: ", resultado)
+elif operacion == "/":
+    resultado = 1
+    for numero in numeros:
+        resultado /= numero
+    print("El resultado de la division es: ", resultado)
 else:
-    print("Usted es menor de edad")
-    
-if edad > 0 and edad < 15:
-    print("Usted es un niño")
-elif edad >= 15 and edad < 18:
-    print("Usted es adolescente")
-elif edad >= 18 and edad < 60:
-    print("Usted es adulto")
-else:    
-    print("Usted es un adulto mayor")
+    print("Operacion no valida")
     
 
 os.system('pause') 
