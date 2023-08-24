@@ -83,6 +83,7 @@ print("")
 tupla = ()
 num = 0
 
+
 num = int(input("Digite el número de datos que quiere ingresar: "))
 for i in range(num):
     tupla += (input("Digite el dato: "),)
